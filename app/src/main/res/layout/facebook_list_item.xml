@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        android:text="Joseph John"
+        app:layout_constraintStart_toEndOf="@+id/ivAvatar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPosts"
+        android:layout_width="395dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="18dp"
+        android:text="More African women should join the tech world to drive diversity and inclusivity, bringing unique perspectives and solutions to the industry's challenges. By empowering African women in technology, we can foster economic growth, bridge the gender gap, and inspire the next generation of female leaders in Africa."
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivAvatar" />
+
+    <ImageView
+        android:id="@+id/ivThumbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPosts"
+        app:srcCompat="@drawable/baseline_thumb_up_24" />
+
+    <ImageView
+        android:id="@+id/ivSmile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toEndOf="@+id/ivThumbs"
+        app:layout_constraintTop_toBottomOf="@+id/tvPosts"
+        app:srcCompat="@drawable/baseline_emoji_emotions_24" />
+
+    <ImageView
+        android:id="@+id/ivHeart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toEndOf="@+id/ivSmile"
+        app:layout_constraintTop_toBottomOf="@+id/tvPosts"
+        app:srcCompat="@drawable/baseline_favorite_24" />
+
+    <TextView
+        android:id="@+id/tvReactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="10dp"
+        android:text="Kevin Awuor, Sarah Liam and 25 others"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPosts" />
+
+    <TextView
+        android:id="@+id/tvComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:text="34"
+        app:layout_constraintStart_toEndOf="@+id/tvReactions"
+        app:layout_constraintTop_toBottomOf="@+id/tvPosts" />
+
+    <ImageView
+        android:id="@+id/ivComments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toEndOf="@+id/tvComment"
+        app:layout_constraintTop_toBottomOf="@+id/tvPosts"
+        app:srcCompat="@drawable/baseline_mode_comment_24" />
+
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="19dp"
+        android:background="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivThumbs" />
+
+    <ImageView
+        android:id="@+id/ivLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vLine"
+        app:srcCompat="@drawable/baseline_thumb_up_24" />
+
+
+    <View
+        android:id="@+id/vLine2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="76dp"
+        android:background="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivThumbs" />
+
+    <TextView
+        android:id="@+id/tvLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="18dp"
+        android:text="Like"
+        app:layout_constraintStart_toEndOf="@+id/ivLike"
+        app:layout_constraintTop_toBottomOf="@+id/vLine" />
+
+    <ImageView
+        android:id="@+id/ivComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toEndOf="@+id/tvLike"
+        app:layout_constraintTop_toBottomOf="@+id/vLine"
+        app:srcCompat="@drawable/baseline_mode_comment_24" />
+
+    <TextView
+        android:id="@+id/tvMakeComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="18dp"
+        android:text="Comment"
+        app:layout_constraintStart_toEndOf="@+id/ivComment"
+        app:layout_constraintTop_toBottomOf="@+id/vLine" />
+
+    <ImageView
+        android:id="@+id/ivShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/tvMakeComment"
+        app:layout_constraintTop_toBottomOf="@+id/vLine"
+        app:srcCompat="@drawable/baseline_ios_share_24" />
+
+    <TextView
+        android:id="@+id/tvShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintStart_toEndOf="@+id/ivShare"
+        app:layout_constraintTop_toBottomOf="@+id/vLine" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
